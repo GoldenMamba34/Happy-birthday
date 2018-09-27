@@ -2,7 +2,7 @@ var hasAddedConfetti;
 
 hasAddedConfetti = false;
 
-$(document).click(function(event) {
+$(document).addEventListiner(event, function() {
   // console.log(event.clientX, event.clientX)
   alert("Hello World");
   $("body").css("filter", "blur(0)");
