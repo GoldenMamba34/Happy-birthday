@@ -4,6 +4,7 @@ hasAddedConfetti = false;
 
 $(document).click(function(event) {
   // console.log(event.clientX, event.clientX)
+  alert("Hello World");
   $("body").css("filter", "blur(0)");
   // Add Confetti
   if (hasAddedConfetti === false) {

@@ -2,10 +2,11 @@ hasAddedConfetti = false
 
 $(document).click((event) ->
     # console.log(event.clientX, event.clientX)
-
+    alert("Hello World")
     $("body").css("filter", "blur(0)")
     # Add Confetti
-    if hasAddedConfetti is false 
+    if hasAddedConfetti is false
+
         `
         (function () {
             // globals
