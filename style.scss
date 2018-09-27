@@ -1,0 +1,14 @@
+#happyBirthday {
+    text-align:center;
+    margin-top:25%;
+    font-size:7rem;
+    font-family:Arial;
+position:fixed;
+
+}
+body {
+    transition-duration:.8s;
+    background: linear-gradient(to right,rgb(0, 209, 246), rgb(0, 125, 255));
+        filter: blur(3rem);
+        overflow:none;
+}
