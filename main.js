@@ -214,7 +214,6 @@ $(document).click(function(event) {
         })();
         ;
   }
-  
   hasAddedConfetti = true;
   return void 0;
 });

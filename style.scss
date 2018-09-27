@@ -6,14 +6,16 @@
 position:fixed;
 height:25%;
 line-height:120%;
-
+color:white;
 
 }
 body {
     transition-duration:.8s;
-    background: linear-gradient(to right,rgb(0, 209, 246), rgb(0, 125, 255));
+    // background: linear-gradient(to right,rgb(0, 209, 246), rgb(0, 125, 255));
+    background:black;
         filter: blur(3rem);
         overflow:none;
+        height:100vh;
 
 }
 #canvas {

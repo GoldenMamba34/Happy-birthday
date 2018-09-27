@@ -212,7 +212,7 @@ $(document).click((event) ->
             })();
         })();
         `
-    ``
+
 
     hasAddedConfetti = true
     undefined
