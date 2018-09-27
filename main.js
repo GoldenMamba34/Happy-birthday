@@ -2,7 +2,7 @@ var hasAddedConfetti;
 
 hasAddedConfetti = false;
 
-$(document).addEventListiner(event, function() {
+$(document).on("click touchstart", function(event) {
   // console.log(event.clientX, event.clientX)
   alert("Hello World");
   $("body").css("filter", "blur(0)");
