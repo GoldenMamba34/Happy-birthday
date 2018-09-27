@@ -10,7 +10,7 @@ $(document).click((event) ->
     var ctx;
     var W;
     var H;
-    var mp = 1000; //max particles
+    var mp = 1500; //max particles
     var particles = [];
     var angle = 0;
     var tiltAngle = 0;
@@ -21,22 +21,19 @@ $(document).click((event) ->
     var animationHandler;
 
     // objects
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
 
     var particleColors = {
-        colorOptions: ["DodgerBlue", "OliveDrab", "Gold", "pink", "SlateBlue", "lightblue", "Violet", "PaleGreen", "SteelBlue", "SandyBrown", "Chocolate", "Crimson"],
-        colorIndex: 0,
-        colorIncrementer: 0,
-        colorThreshold: 10,
+
         getColor: function () {
-            if (this.colorIncrementer >= 10) {
-                this.colorIncrementer = 0;
-                this.colorIndex++;
-                if (this.colorIndex >= this.colorOptions.length) {
-                    this.colorIndex = 0;
-                }
-            }
-            this.colorIncrementer++;
-            return this.colorOptions[this.colorIndex];
+            return getRandomColor();
         }
     }
 

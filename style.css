@@ -12,3 +12,8 @@ body {
     filter: blur(3rem);
     overflow: none;
 }
+
+#canvas {
+    width: 100%;
+    height: 100%;
+}
