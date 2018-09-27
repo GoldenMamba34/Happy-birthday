@@ -4,7 +4,6 @@ hasAddedConfetti = false;
 
 $(document).on("click touchstart", function(event) {
   // console.log(event.clientX, event.clientX)
-  alert("Hello World");
   $("body").css("filter", "blur(0)");
   // Add Confetti
   if (hasAddedConfetti === false) {
